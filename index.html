@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Olamide Olufayo</title>
+	<link rel="icon" type="image/x-icon" href="/images/44 logo.png">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header" class="alt">
+            <a href="index.html" class="logo"><strong>Olamide Olufayo</strong></a>
+            <nav>
+                <a href="#menu">Menu</a>
+            </nav>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <ul class="links">
+                <li><a href="work.html">My Work</a></li>
+                <li><a href="skills.html">My Skills</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="certificates.html">Certificates</a></li>
+                <li><a href="art.html">Graphic Design</a></li>
+                <li><a href="website CV.pdf">My CV</a></li>
+            </ul>
+        </nav>
+
+        <!-- Banner -->
+        <section id="banner" class="major">
+            <div class="inner">
+                <header class="major">
+                    <h1>Olamide Olufayo</h1>
+                </header>
+                <div class="content">
+                    <p>An Aspiring software developer
+                        </br>Computer science student at the <a href="https://www.surrey.ac.uk/" target="_blank">University of Surrey</a></p>
+                    <ul class="actions">
+                        <li><a href="#one" class="button next scrolly">Get Started</a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- One -->
+            <section id="one" class="tiles">
+                <article>
+                    <span class="image">
+                        <img src="images/pic01.jpg" alt="" />
+                    </span>
+                    <header class="major">
+                        <h3><a href="about.html" class="link">About Me</a></h3>
+                        <p>Get to know me</p>
+                    </header>
+                </article>
+                <article>
+                    <span class="image">
+                        <img src="images/pic02.jpg" alt="" />
+                    </span>
+                    <header class="major">
+                        <h3><a href="skills.html" class="link">Skills</a></h3>
+                        <p>My coding skills</p>
+                    </header>
+                </article>
+                <article>
+                    <span class="image">
+                        <img src="images/pic03.jpg" alt="" />
+                    </span>
+                    <header class="major">
+                        <h3><a href="work.html" class="link">My Work</a></h3>
+                        <p>My current projects</p>
+                    </header>
+                </article>
+                <article>
+                    <span class="image">
+                        <img src="images/pic04.jpg" alt="" />
+                    </span>
+                    <header class="major">
+                        <h3><a href="certificates.html" class="link">Certificates</a></h3>
+                        <p>My Qualification</p>
+                    </header>
+                </article>
+                <article>
+                    <span class="image">
+                        <img src="images/pic06.jpg" alt="" />
+                    </span>
+                    <header class="major">
+                        <h3><a href="website CV.pdf" target="_blank" class="link">Resume</a></h3>
+                        <p>My CV</p>
+                    </header>
+                </article>
+                <article>
+                    <span class="image">
+                        <img src="images/pic03.jpg" alt="" />
+                    </span>
+                    <header class="major">
+                        <h3><a href="art.html" class="link">Graphic Design</a></h3>
+                        <p>My art work</p>
+                    </header>
+                </article>
+            
+
+        </div>
+
+<!-- Contact -->
+<section id="contact">
+    <div class="inner">
+        <form id="contact-form">
+            <div class="fields">
+                <div class="field half">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required />
+                </div>
+                <div class="field half">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required />
+                </div>
+                <div class="field">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="6" required></textarea>
+                </div>
+            </div>
+            <ul class="actions">
+                <li><input type="submit" value="Send Message" class="primary" /></li>
+                <li><input type="reset" value="Clear" /></li>
+            </ul>
+        </form>
+        <div id="response-message" class="hidden"></div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer id="footer">
+    <div class="inner">
+        <ul class="icons">
+            <li><a href="mailto:olamideolufayo@gmail.com" target="_blank" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+            <li><a href="https://github.com/Maday44" class="icon brands alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+            <li><a href="https://www.linkedin.com/in/olamide-olufayo-b6b702220/" class="icon brands alt fa-linkedin-in" target="_blank"><span class="label">LinkedIn</span></a></li>
+        </ul>
+        <ul class="copyright">
+            <li>&copy; 2024 Olamide Olufayo</li>
+            <li>Design: <a href="https://www.linkedin.com/in/olamide-olufayo-b6b702220/">Maday</a></li>
+        </ul>
+    </div>
+</footer>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+    (function(){
+        emailjs.init("lTtysCrENe7wwQnd8");
+    })();
+
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const form = this;
+        const responseMessage = document.getElementById('response-message');
+
+        emailjs.sendForm('service_gp0wlzn', 'template_fiv50n7', form)
+            .then(function() {
+                form.classList.add('hidden');
+                responseMessage.innerText = 'Message sent successfully!';
+                responseMessage.classList.remove('hidden');
+                responseMessage.classList.add('success');
+            }, function(error) {
+                form.classList.add('hidden');
+                responseMessage.innerText = 'Failed to send message. Error: ' + JSON.stringify(error);
+                responseMessage.classList.remove('hidden');
+                responseMessage.classList.add('error');
+            });
+    });
+
+    function resetForm() {
+        const form = document.getElementById('contact-form');
+        const responseMessage = document.getElementById('response-message');
+
+        form.reset();
+        form.classList.remove('hidden');
+        responseMessage.classList.add('hidden');
+        responseMessage.classList.remove('success', 'error');
+    }
+</script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+
+<!--css contact form-->
+<style>
+.hidden {
+    display: none;
+}
+
+#response-message.success {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#response-message.error {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+</style>
+</body>
+</html>
